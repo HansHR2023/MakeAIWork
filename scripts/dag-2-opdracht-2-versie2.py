@@ -5,3 +5,9 @@ for i in word3:
     if i.isalpha():
         word3.replace(i," " )
 print( 'x',word3,'x')
+
+
+import re
+word5 =  "Pinda1-Kaas2-3"
+nwword = re.sub(r"[^0-9],' ', word5")
+print(nwword)

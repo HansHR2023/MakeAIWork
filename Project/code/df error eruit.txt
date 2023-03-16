@@ -1,0 +1,8 @@
+data = {'genetic': genetic, 'length':[length],'mass': [mass], 
+                                 'alcohol': [alcohol], 'sugar': [sugar], 
+                                 'smoking': [smoking], 'exercise': [exercise], 'bmi': [bmi]}
+
+df = pd.DataFrame.from_dict(data)
+
+lifespan_predict = reg.predict(df.values)
+df['predict']=lifespan_predict
